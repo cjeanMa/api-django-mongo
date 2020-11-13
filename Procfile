@@ -1,1 +1,1 @@
-web : gunicorn mongoPython.wsgi
+web : gunicorn MongoPython.wsgi

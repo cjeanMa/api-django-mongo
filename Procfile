@@ -1,1 +1,1 @@
-web : gunicorn MongoPython.wsgi
+web : gunicorn MongoPython.wsgi:application --log-file

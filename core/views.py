@@ -31,7 +31,7 @@ def publicacion_detail(request,pk):
     try:
         publicacion = Publicaciones.objects.get(pk=pk)
     except Publicaciones.DoesNotExist:
-        return  JsonResponse({'message': "Dicha Publicacion no existe"}, status=status.HTTP_404_BAD_REQUEST)
+        return  JsonResponse({'message': "Dicha Publicacion no existe"}, status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
         publicacion_serializer = PublicacionesSerializer(publicacion)

@@ -83,25 +83,16 @@ TEMPLATES = [
 WSGI_APPLICATION = 'MongoPython.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-
-# DATABASES = {
-#     "default":{
-#         "ENGINE": "djongo",
-#         ""
-#     }
-# }
 
 
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'CLIENT': {
-            'name': 'dbPrueba',
-            'host': "mongodb+srv://mongoUser:admin123@clustermongo.rx8jg.mongodb.net/test?authSource=admin&replicaSet=atlas-ksl4sj-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true",
-            'username': "mongoUser",
-            "password": "admin123",
+            'name': '######',
+            'host': "###########",
+            'username': "########",
+            "password": "##############",
             "authMechanism": "SCRAM-SHA-1"
         }
 
